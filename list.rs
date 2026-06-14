@@ -1,6 +1,6 @@
 /// Return the LAST element of the vector.
 pub fn last_item(v: &Vec<i32>) -> i32 {
-    v[0]
+    *v.last().unwrap()
 }
 
 fn main() {
